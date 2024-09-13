@@ -31,7 +31,7 @@
         <!-- About Us Summary -->
         <div class="mb-16 flex flex-col lg:flex-row items-center">
           <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
-            <img src="https://via.placeholder.com/600x400?text=About+Us+Image" alt="About Us" class="rounded-lg shadow-lg">
+            <img :src="require('@/assets/Costs Of Aging In Place Vs_ Assisted Living.jpeg')" alt="About Us" class="image-constant rounded-lg shadow-lg">
           </div>
           <div class="lg:w-1/2">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-6">About Us</h2>
@@ -47,7 +47,7 @@
         <!-- Services Summary -->
         <div class="mb-16 flex flex-col lg:flex-row-reverse items-center">
           <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pl-12">
-            <img src="https://via.placeholder.com/600x400?text=Our+Services+Image" alt="Our Services" class="rounded-lg shadow-lg">
+            <img :src="require('@/assets/Download premium image of Group of diverse people holding hands up in the air by Felix about workshop, therapy, class, people circle, and recovery 2027953.jpeg')" alt="Our Services" class="image-constant rounded-lg shadow-lg">
           </div>
           <div class="lg:w-1/2">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Our Services</h2>
@@ -63,7 +63,7 @@
         <!-- FAQ Summary -->
         <div class="mb-16 flex flex-col lg:flex-row items-center">
           <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pr-12">
-            <img src="https://via.placeholder.com/600x400?text=FAQ+Image" alt="FAQ" class="rounded-lg shadow-lg">
+            <img :src="require('@/assets/Premium Vector _ Faq or frequently asked questions for website, blogger helpdesk, clients assistance, helpful information, guides_ background vector illustration.jpeg')" alt="FAQ" class="image-constant rounded-lg shadow-lg">
           </div>
           <div class="lg:w-1/2">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Frequently Asked Questions</h2>
@@ -76,19 +76,18 @@
           </div>
         </div>
 
-        <!-- Contact Summary -->
+        <!-- Contact Section with Typeform Embed -->
         <div class="flex flex-col lg:flex-row-reverse items-center">
           <div class="lg:w-1/2 mb-8 lg:mb-0 lg:pl-12">
-            <img src="https://via.placeholder.com/600x400?text=Contact+Us+Image" alt="Contact Us" class="rounded-lg shadow-lg">
+            <img :src="require('@/assets/vonecia-carswell-0aMMMUjiiEQ-unsplash.jpg')" alt="Contact Us" class="image-constant rounded-lg shadow-lg">
           </div>
           <div class="lg:w-1/2">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Get in Touch</h2>
             <p class="text-lg text-gray-700 leading-relaxed">
               We're here to help. Whether you have questions, need support, or want to learn more about our services, don't hesitate to reach out.
             </p>
-            <router-link to="/contact" class="mt-4 inline-block text-blue-500 font-medium hover:text-blue-700 transition-colors duration-200">
-              Contact us today
-            </router-link>
+            <!-- Typeform Embed -->
+            <div data-tf-live="01J7NTFPTAVWEF9S06F2YDSNQJ"></div>
           </div>
         </div>
       </div>
@@ -104,6 +103,13 @@ export default {
       backgroundImage: require('@/assets/matt-bennett-78hTqvjYMS4-unsplash.jpg'), // Ensure this path matches your project structure
     };
   },
+  mounted() {
+    // Dynamically load the Typeform script when the component is mounted
+    const script = document.createElement('script');
+    script.src = "//embed.typeform.com/next/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+  },
 };
 </script>
 
@@ -113,6 +119,13 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Constant image size */
+.image-constant {
+  width: 600px; /* Adjust to your desired width */
+  height: 400px; /* Adjust to your desired height */
+  object-fit: cover; /* Maintain aspect ratio and ensure the image covers the container */
 }
 
 /* Section styling */
