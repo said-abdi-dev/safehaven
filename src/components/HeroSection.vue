@@ -38,9 +38,6 @@
             <p class="text-lg text-gray-700 leading-relaxed">
               Twins HomeCare is committed to providing essential support and training to adults 18 and older. Our services focus on community participation, health, safety, and life skills, ensuring everyone has a stable place to call home and the opportunity to achieve their full potential.
             </p>
-            <router-link to="/about" class="mt-4 inline-block text-blue-500 font-medium hover:text-blue-700 transition-colors duration-200">
-              Learn more about us
-            </router-link>
           </div>
         </div>
 
