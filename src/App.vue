@@ -4,7 +4,7 @@
       <nav class="container mx-auto p-6 flex justify-between items-center">
         <!-- Logo -->
         <div class="logo">
-          <img :src="require('/Users/saidabdi/safehaven/src/assets/TenderCare Logo(s).jpg')" alt="Safe Haven Logo" class="h-20 ml-4">
+          <img :src="require('/Users/saidabdi/safehaven/src/assets/TenderCare-Logo(s).jpg')" alt="Safe Haven Logo" class="h-20 ml-4">
         </div>
 
         <!-- Navigation Links -->
