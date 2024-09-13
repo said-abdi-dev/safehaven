@@ -116,56 +116,67 @@ export default {
 <style scoped>
 /* Ensure the background covers the entire header */
 header {
+  height: 100vh; /* Full viewport height */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Constant image size */
+/* Responsive image sizing */
 .image-constant {
-  width: 600px; /* Adjust to your desired width */
-  height: 400px; /* Adjust to your desired height */
-  object-fit: cover; /* Maintain aspect ratio and ensure the image covers the container */
+  width: 100%; /* Allow image to take full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
 }
 
-/* Section styling */
-section {
-  padding: 1rem 0;
+/* Responsive typography */
+h1 {
+  font-size: 4rem; /* Base size */
 }
 
-/* Responsive layout for images and text */
-@media (min-width: 1024px) {
-  .flex-row-reverse {
-    flex-direction: row-reverse;
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem; /* Adjust font size for medium-sized screens */
   }
-  .lg\:pr-12 {
-    padding-right: 3rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
   }
+
+  .lg\:w-1\/2 {
+    width: 100%; /* Full width on small screens */
+  }
+
+  .lg\:pr-12,
   .lg\:pl-12 {
-    padding-left: 3rem;
+    padding: 0; /* Remove padding on small screens */
+  }
+
+  .image-constant {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    font-size: 0.875rem; /* Adjust button size on smaller screens */
+    padding: 0.5rem 1rem;
   }
 }
 
-/* Headings and paragraph styles */
-h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
+/* Layout adjustments for smaller screens */
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem; /* Adjust padding for mobile devices */
+  }
 
-p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
+  .lg\:flex-row {
+    flex-direction: column; /* Stack content vertically on mobile */
+  }
 
-/* Link styles */
-a {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  color: white;
-  transition: color 0.2s ease-in-out;
-}
-
-a:hover {
-  color: black;
+  .lg\:w-1\/2 {
+    width: 100%; /* Full width for sections */
+  }
 }
 </style>
