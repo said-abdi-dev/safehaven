@@ -2,10 +2,12 @@
   <div id="app">
     <header class="bg-transparent z-20">
       <nav class="container mx-auto p-6 flex justify-between items-center">
-        <!-- Logo -->
-        <div class="logo">
-          <img :src="require('@/assets/TenderCareLogo.jpg')" alt="Twins HomeCare Logo" class="logo-img">
-        </div>
+        <!-- Logo wrapped in router-link to redirect to Home -->
+        <router-link to="/">
+          <div class="logo">
+            <img :src="require('@/assets/TenderCareLogo.jpg')" alt="Twins HomeCare Logo" class="logo-img">
+          </div>
+        </router-link>
 
         <!-- Navigation Links (visible on all screen sizes) -->
         <ul class="wsite-menu-default flex space-x-8 ml-auto">
@@ -55,8 +57,8 @@ export default {
 /* Ensure the logo is responsive */
 .logo img {
   height: auto;
-  max-width: 100%;
-  width: 150px; /* Default logo width for mobile */
+  max-width: 50%;
+  width: 100px; /* Default logo width for mobile */
 }
 
 /* Adjust logo size for larger screens */
