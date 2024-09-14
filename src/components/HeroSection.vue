@@ -4,11 +4,23 @@
     <header class="relative bg-cover bg-center bg-no-repeat bg-black shadow-lg" :style="{ backgroundImage: `url(${backgroundImage})` }">
       <nav class="container mx-auto p-6 flex justify-between items-center">
         <!-- Mobile Menu Button -->
-        <button type="button" class="lg:hidden p-2 -m-2 text-white transition-all duration-200 hover:text-gray-300">
+        <button @click="toggleMenu" type="button" class="lg:hidden p-2 -m-2 text-white transition-all duration-200 hover:text-gray-300">
           <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="CurrentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
+
+        <!-- Mobile Menu (hidden by default) -->
+        <div v-if="isMenuOpen" class="mobile-menu bg-black text-white p-4 absolute top-full left-0 w-full lg:hidden">
+          <ul class="space-y-4">
+            <li><router-link to="/" class="block">Home</router-link></li>
+            <li><router-link to="/about" class="block">About Us</router-link></li>
+            <li><router-link to="/services" class="block">Services</router-link></li>
+            <li><router-link to="/contact" class="block">Contact</router-link></li>
+            <li><router-link to="/referral" class="block">Referral</router-link></li>
+            <li><router-link to="/faq" class="block">FAQ</router-link></li>
+          </ul>
+        </div>
       </nav>
 
       <!-- Hero Content -->
