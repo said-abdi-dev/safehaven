@@ -4,16 +4,17 @@
       <nav class="container mx-auto p-6 flex justify-between items-center">
         <!-- Logo -->
         <div class="logo">
-          <img :src="require('@/assets/TenderCareLogo.jpg')" alt="Safe Haven Logo" class="h-20 ml-4">
+          <img :src="require('@/assets/TenderCareLogo.jpg')" alt="Twins HomeCare Logo" class="logo-img">
         </div>
 
-        <!-- Navigation Links -->
+        <!-- Navigation Links (visible on all screen sizes) -->
         <ul class="wsite-menu-default flex space-x-8 ml-auto">
           <li><router-link to="/" class="wsite-menu-item text-black hover:text-gray-300">Home</router-link></li>
+          <li><router-link to="/about" class="wsite-menu-item text-black hover:text-gray-300">About Us</router-link></li> 
           <li><router-link to="/services" class="wsite-menu-item text-black hover:text-gray-300">Services</router-link></li>
           <li><router-link to="/contact" class="wsite-menu-item text-black hover:text-gray-300">Contact</router-link></li>
+          <li><router-link to="/referral" class="wsite-menu-item text-black hover:text-gray-300">Referral</router-link></li>
           <li><router-link to="/faq" class="wsite-menu-item text-black hover:text-gray-300">FAQ</router-link></li>
-          <li><router-link to="/referral" class="wsite-menu-item text-black hover:text-gray-300">Referral</router-link></li> <!-- New menu item -->
         </ul>
       </nav>
     </header>
@@ -27,10 +28,11 @@
           <div class="mb-6 lg:mb-0">
             <ul class="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6">
               <li><router-link to="/" class="hover:underline">Home</router-link></li>
+              <li><router-link to="/about" class="hover:underline">About Us</router-link></li>
               <li><router-link to="/services" class="hover:underline">Services</router-link></li>
               <li><router-link to="/contact" class="hover:underline">Contact</router-link></li>
+              <li><router-link to="/referral" class="hover:underline">Referral</router-link></li>
               <li><router-link to="/faq" class="hover:underline">FAQ</router-link></li>
-              <li><router-link to="/referral" class="hover:underline">Referral</router-link></li> <!-- New menu item in footer -->
             </ul>
           </div>
           
@@ -50,21 +52,37 @@ export default {
 </script>
 
 <style scoped>
-/* Adjust logo and navigation styles */
+/* Ensure the logo is responsive */
 .logo img {
-  margin-left: 1rem; /* Adjust left margin as needed */
+  height: auto;
+  max-width: 100%;
+  width: 150px; /* Default logo width for mobile */
 }
 
+/* Adjust logo size for larger screens */
+@media (min-width: 768px) {
+  .logo img {
+    width: 180px; /* Adjust logo width for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo img {
+    width: 200px; /* Adjust logo width for desktop screens */
+  }
+}
+
+/* Navigation menu styles */
 .wsite-menu-default li {
   margin-left: 1rem;
 }
 
+.wsite-menu-default {
+  margin-left: auto;
+}
+
 /* Ensure spacing and alignment is consistent across different screen sizes */
 @media (min-width: 1024px) {
-  .logo img {
-    margin-left: 0; /* Reset margin on larger screens if needed */
-  }
-
   .wsite-menu-default {
     margin-left: auto;
   }

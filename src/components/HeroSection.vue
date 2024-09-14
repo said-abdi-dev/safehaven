@@ -3,7 +3,6 @@
     <!-- Header Section with Background Image -->
     <header class="relative bg-cover bg-center bg-no-repeat bg-black shadow-lg" :style="{ backgroundImage: `url(${backgroundImage})` }">
       <nav class="container mx-auto p-6 flex justify-between items-center">
-       
         <!-- Mobile Menu Button -->
         <button type="button" class="lg:hidden p-2 -m-2 text-white transition-all duration-200 hover:text-gray-300">
           <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="CurrentColor">
@@ -34,10 +33,16 @@
             <img :src="require('@/assets/Costs Of Aging In Place Vs_ Assisted Living.jpeg')" alt="About Us" class="image-constant rounded-lg shadow-lg">
           </div>
           <div class="lg:w-1/2">
-            <h2 class="text-3xl font-extrabold text-gray-900 mb-6">About Us</h2>
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-6">About Twins HomeCare</h2>
             <p class="text-lg text-gray-700 leading-relaxed">
-              Twins HomeCare is committed to providing essential support and training to adults 18 and older. Our services focus on community participation, health, safety, and life skills, ensuring everyone has a stable place to call home and the opportunity to achieve their full potential.
+              At <strong>Twins HomeCare</strong>, we are more than just a service—we are a lifeline. We provide essential support and training to adults, ensuring community participation, health, and life skills development, so everyone has a stable place to call home.
             </p>
+            <p class="text-lg text-gray-700 leading-relaxed mt-4">
+              We offer personalized services that empower individuals to reclaim their lives and thrive. Whether you need help with daily living, emotional support, or guidance in crisis situations, Twins HomeCare is here for you.
+            </p>
+            <router-link to="/about" class="mt-4 inline-block text-blue-500 font-medium hover:text-blue-700 transition-colors duration-200">
+              Learn more about us
+            </router-link>
           </div>
         </div>
 
@@ -49,7 +54,10 @@
           <div class="lg:w-1/2">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Our Services</h2>
             <p class="text-lg text-gray-700 leading-relaxed">
-              We offer a range of services designed to meet the unique needs of each individual. From skill maintenance and guidance to assistance with daily living activities, our integrated community support services help you live independently and with confidence.
+              We offer a range of services to meet the unique needs of each individual. Our Integrated Community Support services include assistance with daily living, guidance on using community resources, and fostering interpersonal communication skills.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mt-4">
+              Additionally, we provide crisis respite, household management, adaptive skills, and more. Every service we offer is designed to uplift, protect, and empower our clients to live independently with confidence.
             </p>
             <router-link to="/services" class="mt-4 inline-block text-blue-500 font-medium hover:text-blue-700 transition-colors duration-200">
               Explore our services
@@ -65,7 +73,7 @@
           <div class="lg:w-1/2">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Frequently Asked Questions</h2>
             <p class="text-lg text-gray-700 leading-relaxed">
-              Have questions about our services? Visit our FAQ section to find answers to common inquiries, including eligibility, service coverage, and more.
+              Have questions about our services? Visit our FAQ section to find answers to common inquiries, including service eligibility, coverage, and more.
             </p>
             <router-link to="/faq" class="mt-4 inline-block text-blue-500 font-medium hover:text-blue-700 transition-colors duration-200">
               Visit FAQ
@@ -81,7 +89,7 @@
           <div class="lg:w-1/2">
             <h2 class="text-3xl font-extrabold text-gray-900 mb-6">Get in Touch</h2>
             <p class="text-lg text-gray-700 leading-relaxed">
-              We're here to help. Whether you have questions, need support, or want to learn more about our services, don't hesitate to reach out.
+              Whether you have questions, need support, or want to learn more about our services, don’t hesitate to reach out. We are here to assist and guide you in every step.
             </p>
             <!-- Typeform Embed -->
             <div data-tf-live="01J7NTFPTAVWEF9S06F2YDSNQJ"></div>
@@ -97,11 +105,10 @@ export default {
   name: 'HeroSection',
   data() {
     return {
-      backgroundImage: require('@/assets/matt-bennett-78hTqvjYMS4-unsplash.jpg'), // Ensure this path matches your project structure
+      backgroundImage: require('@/assets/matt-bennett-78hTqvjYMS4-unsplash.jpg'),
     };
   },
   mounted() {
-    // Dynamically load the Typeform script when the component is mounted
     const script = document.createElement('script');
     script.src = "//embed.typeform.com/next/embed.js";
     script.async = true;
@@ -111,69 +118,53 @@ export default {
 </script>
 
 <style scoped>
-/* Ensure the background covers the entire header */
 header {
-  height: 100vh; /* Full viewport height */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Responsive image sizing */
 .image-constant {
-  width: 100%; /* Allow image to take full width of the container */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   object-fit: cover;
 }
 
-/* Responsive typography */
-h1 {
-  font-size: 4rem; /* Base size */
+section {
+  padding: 1rem 0;
 }
 
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 2.5rem; /* Adjust font size for medium-sized screens */
+@media (min-width: 1024px) {
+  .flex-row-reverse {
+    flex-direction: row-reverse;
   }
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem; /* Adjust font size for smaller screens */
+  .lg\:pr-12 {
+    padding-right: 3rem;
   }
-
-  .lg\:w-1\/2 {
-    width: 100%; /* Full width on small screens */
-  }
-
-  .lg\:pr-12,
   .lg\:pl-12 {
-    padding: 0; /* Remove padding on small screens */
-  }
-
-  .image-constant {
-    width: 100%;
-    height: auto;
-  }
-
-  button {
-    font-size: 0.875rem; /* Adjust button size on smaller screens */
-    padding: 0.5rem 1rem;
+    padding-left: 3rem;
   }
 }
 
-/* Layout adjustments for smaller screens */
-@media (max-width: 768px) {
-  nav {
-    padding: 1rem; /* Adjust padding for mobile devices */
-  }
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  .lg\:flex-row {
-    flex-direction: column; /* Stack content vertically on mobile */
-  }
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
-  .lg\:w-1\/2 {
-    width: 100%; /* Full width for sections */
-  }
+a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: white;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: black;
 }
 </style>
