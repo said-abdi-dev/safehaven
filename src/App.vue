@@ -6,7 +6,7 @@
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center">
             <router-link to="/" class="flex-shrink-0">
-              <img class="h-8 w-auto sm:h-10" :src="require('/Users/saidabdi/safehaven/src/assets/TwinsLogo.png')" alt="Twins HomeCare Logo">
+              <img class="h-8 w-auto sm:h-10" :src="require('@/assets/TwinsLogo.png')" alt="Twins HomeCare Logo">
             </router-link>
           </div>
           <div class="hidden md:block">
