@@ -146,7 +146,7 @@
             </button>
             <div v-if="faqs[4].isOpen" class="px-4 pb-5 sm:px-6 sm:pb-6">
               <p>
-                If you have any additional questions that aren't addressed here, please don't hesitate to reach out to us. We're here to help! Contact us by phone at <a href="tel:6124644210" class="text-blue-600 transition-all duration-200 hover:underline"> (612) 464-4210</a> or via email at <a href="mailto:info@inspiritmn.com" class="text-blue-600 transition-all duration-200 hover:underline">info@inspiritmn.com</a>.
+                If you have any additional questions that aren't addressed here, please don't hesitate to reach out to us. We're here to help! Contact us by phone at <a href="tel:6124644210" class="text-blue-600 transition-all duration-200 hover:underline"> (614) 599-5138</a> or via email at <a href="mailto:info@inspiritmn.com" class="text-blue-600 transition-all duration-200 hover:underline">info@twinshcmn.com</a>.
               </p>
             </div>
           </div>
