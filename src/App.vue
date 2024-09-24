@@ -83,8 +83,9 @@ export default {
         { name: 'About Us', href: '/about' },
         { name: 'Services', href: '/services' },
         { name: 'Contact', href: '/contact' },
-        { name: 'FAQ', href: '/faq' },
+        { name: 'Careers', href: '/careers' },
         { name: 'Referral', href: '/referral' },
+        { name: 'FAQ', href: '/faq' },
       ],
     };
   },

@@ -10,6 +10,7 @@ import Services from './components/ServicesPage.vue';
 import ContactUs from './components/ContactUsSection.vue';
 import FAQPage from './components/FAQPage.vue';
 import Referral from './components/ClientReferralForm.vue'; // Import referral form
+import CareerPage from './components/CareerPage.vue'; // Import CareerPage
 
 // Define routes
 const routes = [
@@ -19,6 +20,7 @@ const routes = [
   { path: '/contact', component: ContactUs },
   { path: '/faq', component: FAQPage },
   { path: '/referral', component: Referral },
+  { path: '/careers', component: CareerPage }, // Add route for CareerPage
 ];
 
 // Create Vue Router instance
