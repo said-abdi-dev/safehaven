@@ -65,8 +65,8 @@
           </div>
           <div class="w-full md:w-1/3">
             <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
-            <p class="text-sm">123 Care Street, Cityville, State 12345</p>
-            <p class="text-sm">Phone: (555) 123-4567</p>
+            <p class="text-sm">2233 University Ave W, St. Paul, MN 55114</p>
+            <p class="text-sm">Phone: (614) 599-5138</p>
             <p class="text-sm">Email: info@twinshomecare.com</p>
           </div>
         </div>

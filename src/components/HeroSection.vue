@@ -127,7 +127,6 @@ export default {
       services: [
         'Integrated Community Support',
         'Daily Living Assistance',
-        'Crisis Respite',
         'Household Management',
         'Adaptive Skills Training',
         'Health and Wellness Support',
@@ -135,7 +134,7 @@ export default {
       faqs: [
         { 
           question: 'What services do you offer?',
-          answer: 'We offer a range of services including integrated community support, daily living assistance, crisis respite, and more. Visit our Services page for a full list.'
+          answer: 'We offer a range of services including integrated community support, daily living assistance, and more. Visit our Services page for a full list.'
         },
         {
           question: 'How do I know if I am eligible for your services?',

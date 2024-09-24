@@ -3,18 +3,6 @@
     <div class="container mx-auto px-6 lg:px-8 max-w-7xl">
       <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Our Services</h2>
 
-      <!-- Service 1: Community Residential Services (CRS) -->
-      <div class="service-item mb-16 flex flex-col lg:flex-row items-center">
-        <div class="service-image lg:w-1/2 mb-6 lg:mb-0 lg:mr-8">
-          <img :src="require('@/assets/rosie-sun-rTwhmFSoXC8-unsplash.jpg')" alt="Community Residential Services" class="rounded-lg shadow-lg">
-        </div>
-        <div class="service-text lg:w-1/2">
-          <h4 class="text-2xl font-semibold text-gray-800 mb-4">Community Residential Services (CRS)</h4>
-          <p class="text-gray-600">
-            Services that provide training and/or habilitation, ongoing residential care, and supportive services to adults and/or children in a licensed setting. These services are individualized and based on the needs of the person, as identified in the support plan.
-          </p>
-        </div>
-      </div>
 
       <!-- Service 2: Individualized Home Support (IHS) -->
       <div class="service-item mb-16 flex flex-col lg:flex-row-reverse items-center">
