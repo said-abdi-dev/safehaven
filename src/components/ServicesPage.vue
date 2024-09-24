@@ -1,8 +1,12 @@
 <template>
   <section class="py-24 bg-gray-100">
     <div class="container mx-auto px-6 lg:px-8 max-w-7xl">
-      <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Our Services</h2>
-
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">
+        Our Services
+      </h2>
+      <p class="text-center text-gray-600 mb-16">
+        Twins HomeCare is proud to offer home and community-based services in accordance with Minnesota's 245D waiver programs, serving individuals in the Twin Cities area. Our services focus on empowering individuals to live independently in their homes and participate fully in the community.
+      </p>
 
       <!-- Service 2: Individualized Home Support (IHS) -->
       <div class="service-item mb-16 flex flex-col lg:flex-row-reverse items-center">

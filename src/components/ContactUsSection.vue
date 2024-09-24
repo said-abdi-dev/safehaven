@@ -20,7 +20,7 @@
             <ul class="text-gray-700 space-y-4">
               <li><strong>Phone:</strong> 614-599-5138</li>
               <li><strong>Email Address:</strong> info@twinshcmn.com</li>
-              <li><strong>Address Line:</strong> 2233 University Ave W, St. Paul, MN 55114</li>
+              <li><strong>Address Line:</strong> 5780 Lincoln Drive, Suite 150 Edina, MN 55436</li>
               <li><strong>24/7 Support:</strong> Your Trusted 24 Hours Service Provider!</li>
             </ul>
           </div>
