@@ -3,11 +3,13 @@
       <div class="container mx-auto px-6 lg:px-8 max-w-4xl bg-white p-8 rounded-lg shadow-sm">
         <!-- Heading -->
         <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6">Twins HomeCare Job Application Form</h2>
-        <h3 class="text-xl font-small text-center text-gray-700 mb-4"> Thank you for your interest in joining our team. Please complete the form below. </h3>
+        <h3 class="text-xl font-small text-center text-gray-700 mb-4">
+          Thank you for your interest in joining our team. Please complete the form below.
+        </h3>
   
         <!-- Typeform Embed -->
         <div class="typeform-container">
-          <div data-tf-live="01J7MTT5XGZ237TSWSG4WETNFC"></div>
+          <div data-tf-live="01J8N1GK6FV2ZV3BQM8RHREG90"></div> <!-- Updated Typeform ID -->
         </div>
       </div>
     </section>
