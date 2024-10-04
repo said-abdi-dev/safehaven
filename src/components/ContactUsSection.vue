@@ -18,7 +18,7 @@
             <h3 class="text-2xl font-bold text-gray-900 mb-4">Get in Touch</h3>
             <p class="text-gray-600 mb-6">You can contact us here:</p>
             <ul class="text-gray-700 space-y-4">
-              <li><strong>Phone:</strong> 614-599-5138</li>
+              <li><strong>Phone:</strong> (614) 285-9102</li>
               <li><strong>Email Address:</strong> info@twinshcmn.com</li>
               <li><strong>Address Line:</strong> 5780 Lincoln Drive, Suite 150 Edina, MN 55436</li>
               <li><strong>24/7 Support:</strong> Your Trusted 24 Hours Service Provider!</li>

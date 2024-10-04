@@ -66,7 +66,7 @@
           <div class="w-full md:w-1/3">
             <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
             <p class="text-sm">5780 Lincoln Drive, Suite 150 Edina, MN 55436</p>
-            <p class="text-sm">Phone: (614) 599-5138</p>
+            <p class="text-sm">Phone: (614) 285-9102</p>
             <p class="text-sm">Email: info@twinshomecare.com</p>
           </div>
         </div>
