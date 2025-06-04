@@ -27,7 +27,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div v-if="faqs[0].isOpen" class="px-4 pb-5 sm:px-6 sm:pb-6">
+            <div v-if="faqs[0].isOpen" :class="['px-4 pb-5 sm:px-6 sm:pb-6', {open: faqs[0].isOpen}]">
               <p>
                 Our services are available to individuals aged 18 and above who reside in an ICS environment and are enrolled in the following waivers:
               </p>
@@ -58,7 +58,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div v-if="faqs[1].isOpen" class="px-4 pb-5 sm:px-6 sm:pb-6">
+            <div v-if="faqs[1].isOpen" :class="['px-4 pb-5 sm:px-6 sm:pb-6', {open: faqs[1].isOpen}]">
               <p>
                 Our services do not cover transportation and nursing care. Additionally, individuals receiving ICS cannot simultaneously access state plan or waiver services that overlap with ICS, including:
               </p>
@@ -94,7 +94,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div v-if="faqs[2].isOpen" class="px-4 pb-5 sm:px-6 sm:pb-6">
+            <div v-if="faqs[2].isOpen" :class="['px-4 pb-5 sm:px-6 sm:pb-6', {open: faqs[2].isOpen}]">
               <p>
                 Yes, our services can be provided remotely. All remote support services adhere to the standards and requirements set by the Department of Health Services.
               </p>
@@ -119,7 +119,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div v-if="faqs[3].isOpen" class="px-4 pb-5 sm:px-6 sm:pb-6">
+            <div v-if="faqs[3].isOpen" :class="['px-4 pb-5 sm:px-6 sm:pb-6', {open: faqs[3].isOpen}]">
               <p>
                 We do not assign or manage who resides in our units. Instead, we empower individuals to select their roommates within the boundaries of rental guidelines or lease agreements. We also keep records to ensure that each resident, their case manager, and legal representative (if applicable) are informed of and have approved the living arrangements.
               </p>
@@ -144,7 +144,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            <div v-if="faqs[4].isOpen" class="px-4 pb-5 sm:px-6 sm:pb-6">
+            <div v-if="faqs[4].isOpen" :class="['px-4 pb-5 sm:px-6 sm:pb-6', {open: faqs[4].isOpen}]">
               <p>
                 If you have any additional questions that aren't addressed here, please don't hesitate to reach out to us. We're here to help! Contact us by phone at <a href="tel:6124644210" class="text-blue-600 transition-all duration-200 hover:underline"> (614) 599-5138</a> or via email at <a href="mailto:info@inspiritmn.com" class="text-blue-600 transition-all duration-200 hover:underline">info@twinshcmn.com</a>.
               </p>
@@ -188,7 +188,7 @@
   /* Additional styling if needed */
   
   /* Example: Smooth transition for FAQ answers */
-  div[ v-if="faqs[index].isOpen" ] {
+  .open {
     transition: max-height 0.3s ease;
   }
   </style>
